@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align: center; max-width: 800px;">
+    <h1
+        style="font-size: 3rem; margin-bottom: 0.5rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        Secure Access Control</h1>
+    <p style="color: var(--text-secondary); font-size: 1.25rem; margin-bottom: 3rem;">
+        Next-generation biometric attendance system using iris recognition technology.
+    </p>
+
+    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+        <!-- Card 1 -->
+        <div class="card" style="flex: 1; min-width: 250px; text-align: left;">
+            <div style="font-size: 2rem; color: var(--accent-color); margin-bottom: 1rem;">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <h3>New User?</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Register your biometric data securely in
+                seconds.</p>
+            <a href="/register" style="text-decoration: none;">
+                <button style="width: 100%;">Register Now <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" style="flex: 1; min-width: 250px; text-align: left;">
+            <div style="font-size: 2rem; color: #a855f7; margin-bottom: 1rem;">
+                <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <h3>Mark Attendance</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Quickly scan your eye to verify your
+                identity.</p>
+            <a href="/attendance" style="text-decoration: none;">
+                <button style="width: 100%; background-image: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);">Scan
+                    Now <i class="fa-solid fa-expand"></i></button>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

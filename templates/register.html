@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h2><i class="fa-solid fa-user-shield"></i> User Registration</h2>
+    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Align your eyes within the frame.</p>
+
+    <input type="text" id="userIdInput" placeholder="Enter ID (e.g. EMP001)" autocomplete="off">
+    <input type="text" id="nameInput" placeholder="Enter Full Name" autocomplete="off">
+    <input type="text" id="departmentInput" placeholder="Enter Department" autocomplete="off">
+
+    <div class="camera-wrapper">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <div class="scan-overlay"></div>
+    </div>
+
+    <button id="captureBtn" data-type="register" style="width: 100%; justify-content: center;">
+        <i class="fa-solid fa-camera"></i> Capture & Register
+    </button>
+</div>
+{% endblock %}
